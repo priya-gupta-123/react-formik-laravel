@@ -1,0 +1,58 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+html,
+body {
+    font-family: "Nunito";
+}
+
+// components
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.Sidebar {
+    position: fixed;
+    top: 0px;
+    width: 250px;
+    bottom: 0px;
+}
+
+[class$="Container"] {
+    margin-top: 39px;
+    padding: 14px;
+    min-height: calc(100vh - 39px);
+}
+
+.DashboardContainer {
+    margin-left: 250px;
+}
+
+.text-xxs {
+    font-size: 0.7rem;
+}
+
+.text-xxxs {
+    font-size: 0.6rem;
+}
+
+
+.spinner {
+    animation: spinner 0.75s ease-in-out infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
